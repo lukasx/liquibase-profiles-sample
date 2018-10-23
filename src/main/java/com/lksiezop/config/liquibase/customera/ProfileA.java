@@ -17,7 +17,7 @@ class ProfileA {
     @Bean
     public SpringLiquibase liquibase(DataSource dataSource) {
         SpringLiquibase liquibase = new SpringLiquibase();
-        liquibase.setChangeLog("classpath:liquibase/customerA/dbchangelog.xml");
+        liquibase.setChangeLog("classpath:liquibase/customera/masterchangelog.xml");
         liquibase.setDataSource(dataSource);
         return liquibase;
     }
