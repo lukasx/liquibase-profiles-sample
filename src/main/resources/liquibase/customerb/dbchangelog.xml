@@ -7,9 +7,9 @@
     <include file="../masterchangelog.xml" relativeToChangelogFile="true"  />
 
 
-    <changeSet author="Bill" id="2">
+    <changeSet author="Adam" id="2">
         <addColumn tableName="users">
-            <column name="name" type="varchar(255)" />
+            <column name="age" type="int" />
         </addColumn>
     </changeSet>
 
