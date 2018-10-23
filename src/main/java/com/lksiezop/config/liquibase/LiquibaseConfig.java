@@ -15,6 +15,7 @@ class LiquibaseConfig {
 
     @Value("${liquibase.changelog}")
     private String liquibaseChangelog;
+
     @Bean
     public SpringLiquibase liquibase(DataSource dataSource) {
         SpringLiquibase liquibase = new SpringLiquibase();
@@ -22,7 +23,5 @@ class LiquibaseConfig {
         liquibase.setDataSource(dataSource);
         return liquibase;
     }
-
-
 
 }
